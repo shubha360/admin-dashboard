@@ -9,8 +9,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img {
+    width: 25px;
+}
+
 header {
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
     border-right: 2px solid;
     position: fixed;
@@ -25,7 +29,6 @@ header nav {
 nav .heading {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding-top: 15px;
 }
 
@@ -56,7 +59,6 @@ nav .nav-item:hover {
 }
 
 nav .nav-item img {
-    width: 25px;
     margin-right: 10px;
 }
 
@@ -79,10 +81,119 @@ header .credit p, a {
 }
 
 main {
-    width: 85vw;
-    margin-left: 15vw;
+    width: 80vw;
+    margin-left: 20vw;
 }
 
 main .top-panel {
     width: 100%;
+    padding: 15px 4% 20px 4%;
+    box-shadow: 0 5px 5px 0 rgb(0, 0, 0, 0.100);
+}
+
+main .top-panel .top {
+    width: 100%;
+    display: flex;
+}
+
+.top-panel .top .search {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.top-panel .top .search input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.top-panel .top .profile {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+
+.top-panel .top .profile img {
+    justify-self: center;
+}
+
+.top-panel .top .profile .name-pp {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.top-panel .top .profile .name-pp .photo {
+    background-image: url(images/icons/dashboard.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.top-panel .top .profile .name-pp p {
+    font-size: 1.6rem;
+}
+
+.top-panel .bottom {
+    display: flex;
+    margin-top: 30px;
+}
+
+.top-panel .bottom .intro {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;   
+}
+
+.top-panel .bottom .intro .photo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.top-panel .bottom .intro p {
+    font-size: 1.6rem;
+}
+
+.top-panel .bottom .intro h2 {
+    font-size: 2rem;
+}
+
+.top-panel .bottom .buttons {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+.top-panel .bottom .buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    cursor: pointer;
+    width: 100px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.top-panel .bottom .buttons .button p {
+    font-size: 1.4rem;
+}
+
+.top-panel .bottom .buttons .button img {
+    width: 20px;
 }
