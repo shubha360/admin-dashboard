@@ -1,9 +1,88 @@
 :root {
-
+    font-size: 10px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 15vw;
+    height: 100vh;
+    border-right: 2px solid;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav {
+    width: 100%;
+}
+
+nav .heading {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 15px;
+}
+
+nav .heading img {
+    width: 36px;
+    margin: 0 5px;
+    margin-left: 20px;
+}
+
+nav .heading h1 {
+    font-size: 2.5rem;
+    margin: 0 5px;
+}
+
+nav ul {
+    margin-top: 30px;
+}
+
+nav .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+nav .nav-item:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+nav .nav-item img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+nav .nav-item p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header .credit {
+    width: 100%;
+    align-self: flex-end;
+    padding: 10px 0;
+}
+
+header .credit p, a {
+    text-align: center;    
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+main {
+    width: 85vw;
+    margin-left: 15vw;
+}
+
+main .top-panel {
+    width: 100%;
 }
