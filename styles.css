@@ -23,10 +23,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important; */
 }
 
 img {
@@ -515,11 +511,12 @@ main .main-content .sides {
     header {
         display: none;
         visibility: hidden;
+        width: 60vw;
     }
 
     main {
         width: 100vw;
-        margin-left: 0;
+        margin-left: 0vw;
     }
     
     .top-panel .top button {
