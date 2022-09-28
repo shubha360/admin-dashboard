@@ -1,7 +1,3 @@
-
-
-
-
 const headerPanel = document.querySelector("header");
 const mainPanel = document.querySelector("main");
 const navButton = document.querySelector(".top-panel #nav-button");
@@ -20,8 +16,6 @@ navButton.addEventListener("click", () => {
 	navButton.style.display = "none";
 	navButton.style.visibility = "hidden";
 	
-	// mainPanel.addEventListener("click", closeNav);
-	
 	navIsOpen = true;
 });
 
@@ -36,9 +30,7 @@ function closeNav() {
 		mainPanel.style.marginLeft = "0";
 		
 		navButton.style.display = "unset";
-		navButton.style.visibility = "unset";
-		
-		// mainPanel.removeEventListener("click");
+		navButton.style.visibility = "unset";		
 		
 		navIsOpen = false;
 	}
